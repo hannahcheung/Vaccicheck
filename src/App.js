@@ -44,6 +44,7 @@ class App extends Component {
                     <Route path={ROUTES.CLINIC} component={HomePage} />
                     <Route path={ROUTES.ACCOUNT} component={AccountPage} />
                     <Route path={ROUTES.ADMIN} component={AdminPage} />
+                    <Route path="/home" component={HomePage} />
                 </div>
             </Router>
         )

@@ -10,11 +10,15 @@ export default function Header() {
         <Link to="/" style={{textDecoration: "none", color: "black"}}>
             <h1>VacciCheck</h1>
         </Link>
+        <Link to="/home" style={{textDecoration: "none", color: color}}>
+            <h3>Home</h3>
+        </Link>
         <Link to="/signup" style={{textDecoration: "none", color: color}}>
             <h3
                 onMouseOver={() => setColor("red")}
                 onMouseOut={() => setColor("black")}
             >Sign Up</h3>
         </Link>
+
     </div>
 }
