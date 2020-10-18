@@ -29,8 +29,19 @@ export default function Landing() {
         <div id="landingMission">
             <h2 style={{marginBottom: "0px"}}>Mission</h2>
             <p style={{marginTop: "10px", paddingBottom: "40px"}}>
-                VacciCheck is here to provide anyone the means of locating places to get
-                vaccinated and to keep track of your immunization record. For medical emergencies, please dial 911.</p>
+                Vaccicheck aims to assist communities with developing healthcare systems as a
+                end-to-end vaccine management tool!
+            </p>
+
+            <p style={{marginTop: "10px", paddingBottom: "40px"}}>
+                Enabling residents with a private yet usable portal, it becomes possible to safely keep track of immunization
+                records AND register for where/when to administer their next vaccinations. Vaccicheck also make it easy for
+                clinics across regions to digitize and stay connected for smarter, more efficient vaccine deployment.
+            </p>
+
+            <p style={{marginTop: "10px", paddingBottom: "40px", color: "red"}}>
+                For medical emergencies, please dial 911.
+            </p>
         </div>
      </div>
 }
