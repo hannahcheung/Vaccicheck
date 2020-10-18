@@ -79,3 +79,48 @@ code {
 #passwordForgot {
   font-size: 16px;
 }
+
+#upcomingVac {
+  background-color: #DAF0EE;
+  padding: 0 40px;
+  width: auto;
+  /*margin-left: 40px;*/
+  border-radius: 25px;
+  margin: 20px;
+}
+
+#resourcesTab {
+  background-color: #DAF0EE;
+  padding: 0 40px;
+  width: auto;
+  border-radius: 25px;
+  margin: 20px;
+}
+
+#vaccineLayout {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+#resourcesTab img {
+  margin: 0 180px;
+}
+
+#profileHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  font-family: "Proxima Nova";
+}
+
+#profileLayout {
+  background-color: #DAF0EE;
+  padding: 0 40px;
+  width: auto;
+  border-radius: 25px;
+  margin: 20px;
+}
