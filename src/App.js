@@ -14,6 +14,8 @@ import Footer from "./components/Footer"
 import profile from "./pages/Profile"
 import records from "./pages/VaccineInfo"
 import map from "./pages/Map"
+import {GoogleMap, useLoadScript, Marker, InfoWindow
+} from "react-google-maps";
 
 import * as ROUTES from './constants/routes';
 import { withAuthentication } from './components/Session';
@@ -21,13 +23,13 @@ import { withAuthentication } from './components/Session';
 class App extends Component {
     
     constructor(props) {
-        super(props)
-        this.state = { user: null }
-    }
+        super(props);
+        this.state = { user: null };
+    };
 
     setUser = (user) => {
         this.setState({user: user})
-    }
+    };
     
     render = () => {
         return (

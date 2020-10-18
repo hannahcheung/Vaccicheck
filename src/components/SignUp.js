@@ -43,8 +43,9 @@ class SignUpFormBase extends Component {
 
         // TODO add patient to firestore
 
+        //this.props.firebase.auth.onChange()
         event.preventDefault();
-    }
+    };
 
     onChange = event => {
         this.setState({ [event.target.name]: event.target.value });
