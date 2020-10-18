@@ -48,6 +48,11 @@ class SignInFormBase extends Component {
         event.preventDefault();
     };
 
+    onSubmitKey = e => {
+        if (e.key === 'Enter')
+            this.onSubmit(e);
+    }
+
     onChange = event => {
         this.setState({ [event.target.name]: event.target.value });
     };
@@ -58,7 +63,7 @@ class SignInFormBase extends Component {
         const isInvalid = password === '' || email === '';
 
         return (
-            <div id="signInFields" onSubmit={this.onSubmit}>
+            <div id="signInFields" onKeyDown={this.onSubmitKey}>
                 <input
                     name="email"
                     value={email}
@@ -78,7 +83,7 @@ class SignInFormBase extends Component {
                 <div id="signInLastLine">
                     <PasswordForgetLink />
                     <Link to="/home">
-                        <button id="loginButton" disabled={isInvalid} type="submit">
+                        <button id="loginButton" disabled={isInvalid} type="submit" onClick={this.onSubmit}>
                             Sign In
                         </button>
                     </Link>

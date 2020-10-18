@@ -8,22 +8,9 @@ import stand from "../images/Standing.png";
 import general from "../images/GeneralGuy.png"
 import ProfileHeader from "../components/ProfileHeader.js";
 
-// class HomePage extends Component {
-//     render() {
-//         return (
-//             <div>
-//                 <h1>Home Page</h1>
-//                 <p>The Home Page is accessible by every signed in user.</p>
-//             </div>
-//         )
-//     }
-// }
-//
-// const condition = authUser => !!authUser;
-//
-// export default withFirebase(withAuthorization(condition)(HomePage));
+const condition = authUser => !!authUser;
 
-export default function Home() {
+export default withAuthorization(condition)(function Home() {
     return <div>
         <ProfileHeader />
         <div id="upcomingVac">
@@ -54,4 +41,4 @@ export default function Home() {
                 </a>
         </div>
     </div>
-}
+})

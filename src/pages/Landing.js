@@ -9,7 +9,7 @@ import blob from "../images/HeaderBlob.png"
 //
 // export default Landing;
 
-export default function Landing() {
+export default function Landing(props) {
     return <div>
         <div id="landingLayoutTop">
             <div id="homeInfo">
@@ -19,7 +19,7 @@ export default function Landing() {
             </div>
             <div id="signIn">
                 <h2 style={{marginBottom: "20px"}}>Welcome back!</h2>
-                <SignIn />
+                <SignIn setUser={props.setUser} />
             </div>
         </div>
         <img style={{width: "15%", height: "15%", position: "absolute", right: "0px", top: "170px", zIndex: "1"}}
