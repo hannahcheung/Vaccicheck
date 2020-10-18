@@ -1,68 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###Inspiration
 
-## Available Scripts
+Deep in sub-saharan Africa, many countries are plagued by the remnants of structural adjustment programs, widespread corruption, and stunted healthcare systems unable to provide for citizens. Vulnerable communities suffer from a lack of access to vital vaccines at clinics, and are unable to locate where they could even get their immunizations complete. From our collective understanding of this global health climate and personal experiences, we were aware that although many non-governmental organizations and local ministries operate in these nations, inefficiencies in resource management and distribution result in consistent error and loss of funds. As a result, tangible improvements at the expected magnitude are absent. Such a harsh reality puts the privileges our society grants in perspective. However, we CAN make a difference. By building a resource management platform that could help individuals understand their immunizations, vaccine records, and new vaccines to take in accordance with connecting to village pharmacies, Vaccicheck aims to help alleviate this global health crisis with the power of technology.
 
-In the project directory, you can run:
+### What it does
 
-### `npm start`
+Vaccicheck aims to assist communities with developing healthcare systems as a end-to-end vaccine management tool! Enabling residents with a private yet usable portal, it becomes possible to safely keep track of immunization records AND register for where/when to administer their next vaccinations. Vaccicheck also intends to make it easy for clinics across regions to digitize and stay connected with patients for smarter, more efficient vaccine deployment. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### To Use App
+Link to access: https://vaccine-deployment.web.app/
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Test Account:
 
-### `npm test`
+Email: jdoe@gmail.com
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Password: 123456
