@@ -34,12 +34,12 @@ class App extends Component {
 
                     <Route exact path={ROUTES.LANDING} component={LandingPage} />
                     <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
-                    <Route path={ROUTES.SIGN_IN} component={SignInPage} />
+                    <Route path={ROUTES.SIGN_IN} render={(props) => (<SignInPage {...props} setUser={this.setUser} />)} />
                     <Route
                         path={ROUTES.PASSWORD_FORGET}
                         component={PasswordForgetPage}
                     />
-                    <Route path={ROUTES.PATIENT} component={HomePage} />
+                    <Route path={ROUTES.PATIENT} render={(props) => (<HomePage {...props} user={this.state.user} />)} />
                     <Route path={ROUTES.CLINIC} component={HomePage} />
                     <Route path={ROUTES.ACCOUNT} component={AccountPage} />
                     <Route path={ROUTES.ADMIN} component={AdminPage} />

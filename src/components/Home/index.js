@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import { withFirebase } from '../Firebase';
 import { withAuthorization } from '../Session';
 
 class HomePage extends Component {
@@ -15,4 +16,4 @@ class HomePage extends Component {
 
 const condition = authUser => !!authUser;
 
-export default withAuthorization(condition)(HomePage);
+export default withFirebase(withAuthorization(condition)(HomePage));

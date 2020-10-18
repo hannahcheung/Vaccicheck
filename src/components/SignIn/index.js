@@ -7,10 +7,10 @@ import { PasswordForgetLink } from '../PasswordForget';
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
 
-const SignInPage = () => (
+const SignInPage = (props) => (
     <div>
         <h1>SignIn</h1>
-        <SignInForm />
+        <SignInForm setUser={props.setUser} />
         <PasswordForgetLink />
         <SignUpLink />
     </div>
@@ -36,6 +36,7 @@ class SignInFormBase extends Component {
             .doSignInWithEmailAndPassword(email, password)
             .then(authUser => {
                 this.setState({ ...INITIAL_STATE });
+                this.props.setUser(authUser);
                 this.props.history.push(ROUTES.PATIENT);
             })
             .catch(error => {
