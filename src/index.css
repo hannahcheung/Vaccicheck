@@ -140,7 +140,7 @@ code {
   align-content: center;
 }
 
-.vaccineRow {
+.rowLayout {
   display: flex;
   flex-direction: row;
 }
@@ -160,10 +160,11 @@ code {
 
 #profileLayout {
   background-color: #DAF0EE;
-  padding: 0 40px;
+  padding: 0px 40px 10px;
   width: auto;
   border-radius: 25px;
   margin: 20px;
+  line-height: 30px;
 }
 
 .resourcesIconText {

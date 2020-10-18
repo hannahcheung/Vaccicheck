@@ -29,18 +29,18 @@ export default function Home() {
         <div id="upcomingVac">
             <h2>Upcoming Vaccinations</h2>
             <div className="vaccineLayout">
-                <div className="vaccineRow">
+                <div className="rowLayout">
                     <p>Influenza Vaccine</p>
                     <p style={{paddingLeft: "40px"}}>DUE by 10/23/2020</p>
                 </div>
             </div>
             <h2 style={{paddingBottom: "0px"}}>Recent Vaccinations</h2>
             <div className="vaccineLayout">
-                <div className="vaccineRow">
+                <div className="rowLayout">
                     <p>HPV Vaccine</p>
                     <p style={{paddingLeft: "40px"}}>Received on 10/18/2020</p>
                 </div>
-                <div className="vaccineRow">
+                <div className="rowLayout">
                     <p>DTap Vaccine</p>
                     <p style={{paddingLeft: "40px"}}>Received on 08/16/2019</p>
                 </div>
