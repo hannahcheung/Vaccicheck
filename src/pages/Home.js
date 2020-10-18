@@ -28,30 +28,62 @@ export default function Home() {
         <ProfileHeader />
         <div id="upcomingVac">
             <h2>Upcoming Vaccinations</h2>
-            <div id="vaccineLayout">
-                <p>Influenza Vaccine</p>
-                <p>DUE by 10/23/2020</p>
+            <div className="vaccineLayout">
+                <div className="rowLayout">
+                    <p>Influenza Vaccine</p>
+                    <p style={{paddingLeft: "40px"}}>DUE by 10/23/2020</p>
+                </div>
             </div>
-            <h2>Recent Vaccinations</h2>
-            <div id="vaccineLayout">
-                <p>HPV Vaccine</p>
-                <p>RECEIVED on 10/18/2020</p>
+            <h2 style={{paddingBottom: "0px"}}>Recent Vaccinations</h2>
+            <div className="vaccineLayout">
+                <div className="rowLayout">
+                    <p>HPV Vaccine</p>
+                    <p style={{paddingLeft: "40px"}}>Received on 10/18/2020</p>
+                </div>
+                <div className="rowLayout">
+                    <p>DTap Vaccine</p>
+                    <p style={{paddingLeft: "40px"}}>Received on 08/16/2019</p>
+                </div>
             </div>
+
         </div>
         <img style={{width: "15%", height: "15%", position: "absolute",
                     right: "0px", top: "180px"}} src={blob} />
         <div id="resourcesTab">
             <h2>Resources</h2>
             <p>Recommended Vaccination Sequences:</p>
-                <a href="https://www.cdc.gov/vaccines/parents/resources/childhood.html">
-                    <img src={child}/>
-                </a>
-                <a href="https://www.cdc.gov/vaccines/parents/resources/teen.html">
-                    <img src={stand}/>
-                </a>
-                <a href="https://www.cdc.gov/vaccines/parents/resources/index.html">
-                    <img src={general}/>
-                </a>
+            <div id="resourcesIconLayout">
+                <div className="resourcesIconText">
+                    <a href={links.childSeries}>
+                        <img src={child}/>
+                    </a>
+                    <a href={links.childSeries}>
+                        Childhood
+                    </a>
+                </div>
+                <div className="resourcesIconText">
+                    <a href={links.teenSeries}>
+                        <img src={stand}/>
+                    </a>
+                    <a href={links.teenSeries}>
+                        Young Adults
+                    </a>
+                </div>
+                <div className="resourcesIconText">
+                    <a href={links.adultSeries}>
+                        <img src={general}/>
+                    </a>
+                    <a href={links.adultSeries}>
+                        Adults
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
+}
+
+const links={
+    childSeries: "https://www.cdc.gov/vaccines/parents/resources/childhood.html",
+    teenSeries: "https://www.cdc.gov/vaccines/parents/resources/teen.html",
+    adultSeries: "https://www.cdc.gov/vaccines/parents/resources/index.html"
 }

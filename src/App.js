@@ -36,7 +36,7 @@ class App extends Component {
             <Router>
                 <div>
                     <Header />
-                    <Route exact path={ROUTES.LANDING} component={LandingPage} />
+                    <Route exact path={ROUTES.LANDING} render={(props) => (<LandingPage {...props} setUser={this.setUser} />)} />
                     <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
                     <Route path={ROUTES.SIGN_IN} render={(props) => (<SignInPage {...props} setUser={this.setUser} />)} />
                     <Route
