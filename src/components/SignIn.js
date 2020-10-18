@@ -84,12 +84,12 @@ class SignInFormBase extends Component {
                     <PasswordForgetLink />
                     <Link to="/home">
                         <button id="loginButton" disabled={isInvalid} type="submit" onClick={this.onSubmit}>
-                            Sign In
+                            Login
                         </button>
                     </Link>
                 </div>
 
-                {error && <p>{error.message}</p>}
+                {error && <p style={{fontSize: "20px"}}>{error.message}</p>}
             </div>
         );
     }

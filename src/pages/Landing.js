@@ -27,7 +27,7 @@ export default function Landing(props) {
 
         {/*<div className="spacer" />*/}
         <div id="landingMission">
-            <h2 style={{marginBottom: "0px"}}>Mission</h2>
+            <h2 style={{marginBottom: "0px", paddingTop: "50px"}}>Mission</h2>
             <p style={{marginTop: "10px", paddingBottom: "40px"}}>
                 Vaccicheck aims to assist communities with developing healthcare systems as a
                 end-to-end vaccine management tool!

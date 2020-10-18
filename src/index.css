@@ -115,26 +115,34 @@ code {
 
 #upcomingVac {
   background-color: #DAF0EE;
-  padding: 0 40px;
+  padding: 20px 40px 0px;
   width: auto;
   /*margin-left: 40px;*/
   border-radius: 25px;
   margin: 20px;
+  line-height: 0;
 }
 
 #resourcesTab {
   background-color: #DAF0EE;
-  padding: 0 40px;
+  padding: 10px 40px 50px;
   width: auto;
   border-radius: 25px;
   margin: 20px;
+  line-height: 30px;
 }
 
-#vaccineLayout {
+.vaccineLayout {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  flex-flow: column nowrap;
   margin-top: 40px;
+  padding-left: 40px;
+  align-content: center;
+}
+
+.vaccineRow {
+  display: flex;
+  flex-direction: row;
 }
 
 #resourcesTab img {
@@ -156,4 +164,16 @@ code {
   width: auto;
   border-radius: 25px;
   margin: 20px;
+}
+
+.resourcesIconText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resourcesIconLayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
