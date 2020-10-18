@@ -1,10 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation.js"
-import blob from "../images/HeaderBlob.png"
+// import SignUp from "../components/SignUp"
 
 export default function Header() {
+    const [color, setColor] = useState("black")
+
     return <div className="header">
-        <h1>VacciCheck</h1>
-        <Navigation />
+        <Link to="/" style={{textDecoration: "none", color: "black"}}>
+            <h1>VacciCheck</h1>
+        </Link>
+        <Link to="/signup" style={{textDecoration: "none", color: color}}>
+            <h3
+                onMouseOver={() => setColor("red")}
+                onMouseOut={() => setColor("black")}
+            >Sign Up</h3>
+        </Link>
     </div>
 }
