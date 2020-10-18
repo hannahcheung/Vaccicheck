@@ -41,7 +41,7 @@ class AdminPage extends Component {
             <div>
                 <h1>Admin</h1>
 
-                {loading && <div>Loading ...</div>}
+                {loading && <div><img src="https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" /></div>}
 
                 <UserList users={users} />
             </div>

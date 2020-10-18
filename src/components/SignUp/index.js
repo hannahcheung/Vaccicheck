@@ -35,11 +35,13 @@ class SignUpFormBase extends Component {
             })
             .then(() => {
                 this.setState({ INITIAL_STATE });
-                this.props.history.push(ROUTES.HOME);
+                this.props.history.push(ROUTES.PATIENT);
             })
             .catch(error => {
                 this.setState({ error });
             });
+
+        // TODO add patient to firestore
 
         event.preventDefault();
     }
