@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "../components/Navigation/index.js"
+import Navigation from "../components/Navigation.js"
 import blob from "../images/HeaderBlob.png"
 
 export default function Header() {

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-import { withFirebase } from '../Firebase';
-import { withAuthorization } from '../Session';
+import { withFirebase } from '../components/Firebase';
+import { withAuthorization } from '../components/Session';
 
 class HomePage extends Component {
     render() {

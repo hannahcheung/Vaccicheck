@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Navigation from '../Navigation';
-import LandingPage from '../Landing';
-import SignUpPage from '../SignUp';
-import SignInPage from '../SignIn';
-import PasswordForgetPage from '../PasswordForget';
-import HomePage from '../Home';
-import AccountPage from '../Account';
-import AdminPage from '../Admin';
-import Header from "../Header"
+import Navigation from './components/Navigation.js';
+import LandingPage from './pages/Landing.js';
+import SignUpPage from './components/SignUp.js';
+import SignInPage from './components/SignIn.js';
+import PasswordForgetPage from './components/PasswordForget.js';
+import HomePage from './pages/Home.js';
+import AccountPage from './components/Account.js';
+import AdminPage from './components/Admin.js';
+import Header from "./components/Header";
 
-import * as ROUTES from '../../constants/routes';
-import { withAuthentication } from '../Session';
+import * as ROUTES from './constants/routes';
+import { withAuthentication } from './components/Session';
 
 class App extends Component {
     
