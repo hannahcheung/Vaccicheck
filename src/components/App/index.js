@@ -9,6 +9,7 @@ import PasswordForgetPage from '../PasswordForget';
 import HomePage from '../Home';
 import AccountPage from '../Account';
 import AdminPage from '../Admin';
+import Header from "../Header"
 
 import * as ROUTES from '../../constants/routes';
 import { withAuthentication } from '../Session';
@@ -28,9 +29,9 @@ class App extends Component {
         return (
             <Router>
                 <div>
-                    <Navigation />
+                    <Header />
 
-                    <hr />
+                    {/*<hr />*/}
 
                     <Route exact path={ROUTES.LANDING} component={LandingPage} />
                     <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
