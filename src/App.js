@@ -10,9 +10,10 @@ import HomePage from './pages/Home.js';
 import AccountPage from './components/Account.js';
 import AdminPage from './components/Admin.js';
 import Header from "./components/Header";
-import ProfilePage from './pages/Profile.js';
-import MapPage from './pages/Map.js';
-import VaccinePage from "./pages/VaccineInfo.js";
+import Footer from "./components/Footer"
+import profile from "./pages/Profile"
+import records from "./pages/VaccineInfo"
+import map from "./pages/Map"
 
 import * as ROUTES from './constants/routes';
 import { withAuthentication } from './components/Session';
@@ -33,9 +34,6 @@ class App extends Component {
             <Router>
                 <div>
                     <Header />
-
-                    {/*<hr />*/}
-
                     <Route exact path={ROUTES.LANDING} component={LandingPage} />
                     <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
                     <Route path={ROUTES.SIGN_IN} render={(props) => (<SignInPage {...props} setUser={this.setUser} />)} />
@@ -48,9 +46,10 @@ class App extends Component {
                     <Route path={ROUTES.ACCOUNT} component={AccountPage} />
                     <Route path={ROUTES.ADMIN} component={AdminPage} />
                     <Route path="/home" component={HomePage} />
-                    <Route path="/profile" component={ProfilePage} />
-                    <Route path="/map" component={MapPage} />
-                    <Route path="/vaccineinfo" component={VaccinePage} />
+                    <Route path="/profile" component={profile} />
+                    <Route path="/map" component={map} />
+                    <Route path="/vaccineinfo" component={records} />
+                    <Footer />
                 </div>
             </Router>
         )

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
 
 import { SignUpLink } from './SignUp.js';
@@ -12,7 +12,7 @@ const SignInPage = (props) => (
         {/*<h1>SignIn</h1>*/}
         <div id="signInBox">
             <SignInForm setUser={props.setUser} />
-            <PasswordForgetLink />
+            {/*<PasswordForgetLink />*/}
             <SignUpLink />
         </div>
     </div>
@@ -66,7 +66,7 @@ class SignInFormBase extends Component {
                     type="text"
                     placeholder="Email Address"
                 />
-                <div className="spacer"></div>
+                <div className="spacer" />
                 <input
                     name="password"
                     value={password}
@@ -74,10 +74,15 @@ class SignInFormBase extends Component {
                     type="password"
                     placeholder="Password"
                 />
-                <div className="spacer"></div>
-                <button disabled={isInvalid} type="submit">
-                    Sign In
-                </button>
+                <div className="spacer" />
+                <div id="signInLastLine">
+                    <PasswordForgetLink />
+                    <Link to="/home">
+                        <button id="loginButton" disabled={isInvalid} type="submit">
+                            Sign In
+                        </button>
+                    </Link>
+                </div>
 
                 {error && <p>{error.message}</p>}
             </div>

@@ -47,7 +47,6 @@ code {
   background-color: #DAF0EE;
   padding: 0 40px;
   max-width: 60%;
-  /*margin-left: 40px;*/
   border-radius: 25px;
 }
 
@@ -77,7 +76,41 @@ code {
 }
 
 #passwordForgot {
-  font-size: 16px;
+  font-size: 20px;
+}
+
+#signInLastLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#loginButton {
+  color: white;
+  background-color: #6B37C1;
+  border-radius: 10px;
+  height: 40px;
+  width: 76px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#signInFields input {
+  box-shadow: 0 0px 0pt 2pt #6B37C1;
+  border-radius: 10px;
+  height: 40px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+#landingMission {
+  background-color: #DAF0EE;
+  padding: 0 40px;
+  margin: 0 80px;
+  border-radius: 25px;
 }
 
 #upcomingVac {

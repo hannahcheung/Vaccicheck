@@ -5,7 +5,7 @@ import { withAuthorization } from '../components/Session';
 import blob from "../images/HeaderBlob.png"
 import ProfileHeader from "../components/ProfileHeader.js";
 
-export default function Map() {
+export default function VaccineInfo() {
     return <div>
         <ProfileHeader />
         <img style={{width: "15%", height: "15%", position: "absolute",
