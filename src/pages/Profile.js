@@ -15,7 +15,7 @@ export default function Profile() {
             <div style={{paddingLeft: "40px"}}>
                 <div className="rowLayout">
                     <p style={{fontWeight: "700"}}>Name:</p>
-                    <p style={{paddingLeft: "40px"}}>Johnson Smith</p>
+                    <p style={{paddingLeft: "40px"}}>Johnson Doe</p>
                 </div>
                 <div className="rowLayout">
                     <p style={{fontWeight: "700"}}>Prounouns:</p>
@@ -27,7 +27,7 @@ export default function Profile() {
                 </div>
                 <div className="rowLayout">
                     <p style={{fontWeight: "700"}}>Email:</p>
-                    <p style={{paddingLeft: "40px"}}>johnson@gmail.com</p>
+                    <p style={{paddingLeft: "40px"}}>jdoe@gmail.com</p>
                 </div>
                 <div className="rowLayout">
                     <p style={{fontWeight: "700"}}>Phone Number:</p>
